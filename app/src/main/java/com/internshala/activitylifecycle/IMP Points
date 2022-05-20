@@ -1,0 +1,58 @@
+we will check the occurences of the methods in a logcat window
+
+What is logcat window?
+
+The logcat window records all the operating system events happening inside
+the phone.It also records all the events taking place inside any particular application
+
+Basics Of XML
+
+code in XML is written using tags.
+
+<Tag></Tag> = <Tag/>
+<LinearLayout></LinearLayout> = <LinearLayout/>  //-> After equal to is the short syntax for writing tag
+we have parent and child tag in xml
+
+The short syntax for writing a tag is only used when that tag does not have any child tags.If the
+tags have children then they will be present between the two parent tags(opening and closing)
+
+// Syntax for writing tags:
+
+<LinearLayout
+
+android:width="match_parent"
+android:height="match_parent"
+</LinearLayout>
+
+What is layout?
+A layout defines the structure in which the various elements on the screen or the activity will be arranged
+all the elements in a layout are built using a hierarchy of View and ViewGroup objects
+
+View : A view object is something that is drawn and that the user interacts with. It is a concrete element on the screen that is visible to the user
+ViewGroup : ViewGroup objects are invisible objects that contain other View and ViewGroup objects
+
+Views are called as widgets
+ViewGroup are called layouts
+
+
+What are pixels?
+Pixel density is the number of pixels present per unit of the screen
+It is measured in ppi(pixels per inch)
+the more the ppi the better is the quality of the screen
+
+DP : Density independent pixel --> used for defining the size of an image or margin
+SP : Scalable pixel --> used for defining the size of the text
+
+
+Whats is the difference between margin and padding?
+
+Margin is used to shift any view from the boundary or the wall of the parent layout
+Padding creates space between the View inside the container and the container boundary
+
+
+Checks for adding images to the layout
+1. The image should be of a small size that is between 200 to 300 kb.
+2. the image should be in png format
+3. the name of the image should be in a format like this : tony_stark.png
+4. the name cannot have any capital letters,numbers or special characters except the underscore
+5. whenever you name a resource you should name them in a way that can help us identify later the resource is.
