@@ -1,0 +1,35 @@
+Points to remember
+
+Whenever the screen needs a Scroll View ,all the others views must come inside the scroll view.
+
+A scroll view can only have one child but can have lots of grandchildren.
+
+The name of the app is in the toolbar
+and the notification panel is known as the status bar
+
+We can change the colour of toolbar by going to the res->values->colors.xml
+
+colorPrimary : this is the primary or the fundamental color of the app which perform general actions and toolbar have this color
+colorPrimaryDark : it is the color of the status bar
+colorAccent : this color is used when we want to seek users attention
+
+We can change the title of the app in the toolbar : with the help of the kotlin file i.e, AvengersActivity.kt file
+AvengersActivity.kt file -> inside OnCreate method -> Write title then put = and write the name in "".
+
+
+To change the name of the app -:
+Manifests file -> AndroidManifest.xml -> android:label
+To change android:label
+res file -> values -> strings.xml ->  <string name="new_app_name">The Avengers</string>  <- create a new string
+                                      like this and then change the reference in
+                                      manifests android:label
+
+or else we can directly change the name of the app
+
+
+
+** create activity name by following the conventions of the Class naming
+
+*** we need to mention every new activity we create in the manifests file
+  Now android studio does this automatically for us what we need to is cut the intent
+  filter tag from current activity and paste it in the new activity

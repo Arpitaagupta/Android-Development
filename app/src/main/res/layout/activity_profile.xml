@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgTonyStark"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/tony_stark"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tony Stark"
+         android:layout_toRightOf="@id/imgTonyStark"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tony@starkindustries.com"
+        android:layout_toRightOf="@id/imgTonyStark"
+        android:layout_below="@id/txtName"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#ff3d00"/>
+
+    <TextView
+        android:id="@+id/txPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgTonyStark"
+        android:text="91 28282939"
+        android:layout_below="@id/txtEmail"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#2196f3"/>
+    
+    <Button
+        android:id="@+id/btnMoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Information"
+        android:layout_below="@id/imgTonyStark"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="#ffffff"
+        android:backgroundTint="#009688"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/txtExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Exit the App"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:backgroundTint="#2962ff"
+        android:padding="8dp"/>
+
+
+</RelativeLayout>

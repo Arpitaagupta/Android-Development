@@ -1,0 +1,12 @@
+What is an intent ?
+
+An intent is an object that provided runtime binding between separate components such as
+two activities.In simple terms it creates a bridge between two activities
+
+Intent will be create inside the btn.setOnClickListener()
+
+1. To create intent we will create an object of the class intent ->
+    val intent = Intent(this@NewActivity,MainActivity::class.java)
+
+2. then -> startActivity(intent)
+

@@ -1,15 +1,25 @@
 package com.internshala.activitylifecycle
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class AvengersActivity : AppCompatActivity() {
+
+
+    var titleName: String? = "Avengers"
+
+    lateinit var etMessage: EditText
+    lateinit var btnSend: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {    // This onCreate() is mandatory and need to be present in every app
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
-        setContentView(R.layout.activity_main)  // R is the res file which consists the id's of all the resources used
+        setContentView(R.layout.activity_avengers)  // R is the res file which consists the id's of all the resources used
         // setContentView extract the layout from the layout directory and sets it on the main screen
         // in short the setContentView is responsible for setting the ui of the app
-
 
         println("onCreate called")
 
@@ -25,9 +35,42 @@ class MainActivity : AppCompatActivity() {
         // What are bundles and what it is used for?
         // A bundle is used to pass data from one activity to another. This data can be in any form,
         // like strings,Integers,double etc.
-    }
 
+        if (intent != null) {
+            titleName = intent.getStringExtra("Name")
+        }
+
+
+        //  title = "The Avengers"
+
+        title = titleName
+
+
+
+        etMessage = findViewById(R.id.etMessage)
+        btnSend = findViewById(R.id.btnSend)
+
+
+        btnSend.setOnClickListener {
+
+            val message: String? = etMessage.text.toString()
+
+            if (message?.isNotEmpty() == true) {
+
+                val intent = Intent(this@AvengersActivity, Message_Activity::class.java)
+                intent.putExtra("Message", message)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this@AvengersActivity, "Write a message!", Toast.LENGTH_SHORT).show()
+            }
+
+
+        }
+
+
+        /*
     override fun onStart() {
+
         super.onStart()
         println("OnStart called")
     }
@@ -58,5 +101,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+     */
+
+
+    }
 }
 

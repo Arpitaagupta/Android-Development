@@ -1,0 +1,31 @@
+What is the findViewById() function ?
+
+The findViewById() function find the views by looking at their ID's
+and connects them to the variables we have declared.The function is
+defined in the libraries of Android SDK
+
+Adding event listener :
+Event listeners simply enable us or our code to listen to an event.An event is anything
+that the user does on the app,such as clicking a button or a link.
+
+Where did the Views that we have been using till now come from?
+The views that we have been dealing with till now are declared and defined inside the class 'View'
+Also this view has an interface called OnClickListener().This interface has a method called
+onClick()
+
+
+Steps for implementing a click on a View :
+
+1. First we declared variables for the various Views by using the 'lateinit' keyword
+2. Then we initialised these variables inside the onCreate() method,by using the findViewById() method
+3. We used the set onClickListener() on the button,to set a click on the button
+4. to provide a framework for this click listener,we implemented the OnClickListener() interface
+   of the Views class and then implemented its onClick() method
+5. Then we passed the 'this' parameter inside the setOnClickListener() method to use the
+   onClick() method we implemented earlier.
+6. Finally we created a Toast inside the onClick() method and displayed it on the screen
+
+
+
+
+

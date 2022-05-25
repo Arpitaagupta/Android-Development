@@ -1,0 +1,15 @@
+Linear layout
+Linear layout  are sued when we want to arrange the widgets in a linear manner on the screen
+
+Relative layout
+Relative layouts are used when we want to arrange the widgets in relation to one other or in relation
+to the screen
+
+Conventions for writing the id's
+
+TextView - txt<purpose>
+ImageView - img<purpose>
+Button - btn<purpose>
+EditText - et<purpose>
+
+TextSize is not applicable in edit text option

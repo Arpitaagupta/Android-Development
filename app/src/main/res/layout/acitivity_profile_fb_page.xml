@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b5998">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/fb"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:hint="Username or Email"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/opensans_bold"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="#d3d3d3"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/opensans_bold"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="#d3d3d3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5c6bc0"
+            android:text="Log In"
+            android:layout_marginTop="35dp"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#d3d3d3"
+            android:textStyle="bold"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/txtSignUp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="Sign up for facebook"
+               android:textSize="18sp"
+               android:textColor="#d3d3d3"
+               android:fontFamily="@font/opensans_bold" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Forgot Password?"
+                  android:layout_marginTop="15dp"
+                  android:layout_gravity="center"
+                  android:textSize="18sp"
+                  android:fontFamily="@font/opensans_bold"
+                  android:layout_marginBottom="15dp"
+                  android:textColor="#d3d3d3"/>
+
+
+
+          </LinearLayout>
+
+
+</RelativeLayout>
+
+</LinearLayout>
