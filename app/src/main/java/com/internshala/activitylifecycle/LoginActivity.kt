@@ -1,12 +1,14 @@
 package com.internshala.activitylifecycle
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import java.util.prefs.AbstractPreferences
 
 class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> A class can inherit only one class but can implement multiple
     // interfaces. Here this class LoginActivity has inherited the AppCompatActivity() and implement the OnClickListener interface
@@ -26,13 +28,33 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
     val validPassword = arrayOf("tony","steve","bruce","thanos")
 
 
+    // Creating object of SharedPreferences class
+
+    lateinit var sharedPreferences: SharedPreferences // -> Creating object of sharePreferences class
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+         sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name), MODE_PRIVATE)
+         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn",false)  // -> this isLoggedIn inside getBoolean method is case sensitive. so the name should be same as the key(isLoggedIn) created in the sharedPreferences method()
+
         setContentView(R.layout.activity_login)
+
+
+        if(isLoggedIn) {
+             val intent = Intent(this@LoginActivity,AvengersActivity::class.java)
+             startActivity(intent)
+             finish()
+         }
+
+
+
+
 
         title = "Log In"
 
-        // once the layout is created by the oncreate method we can go ahead and connect the variables to the respective views
+        // once the layout is created by the onCreate method we can go ahead and connect the variables to the respective views
         // inside OnCreate() method
 
         etMobileNumber = findViewById(R.id.etMobileNumber)
@@ -43,9 +65,14 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
 
 
+        txtForgotPassword.setOnClickListener() {
+            Toast.makeText(this@LoginActivity,"Clicked on forgot password",Toast.LENGTH_LONG).show()
+        }
+
+
 
         //1.    btnLogin.setOnClickListener(this)  // we need to implement the onClick method. So for that we will simply put 'this'
-        // inside the curly brackets
+        // inside the curly brackets\
 
         btnLogin.setOnClickListener {      // --> This is called the lambda representation of implementing a click listener
 
@@ -66,29 +93,38 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
             if (mobileNumber == validMobileNumber) {
 
                 if(password == validPassword[0]) {
-                    nameOfAvenger = "Iron Man"
 
-                    intent.putExtra("Name",nameOfAvenger)
+
+                    nameOfAvenger = "Iron Man"
+                    savePreferences(nameOfAvenger)
+
+                 //   intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
 
                 }
 
                 else if(password == validPassword[1]) {
+
                     nameOfAvenger = "Captain America"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                //    intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
 
                 }
 
                 else if(password == validPassword[2]) {
+
                     nameOfAvenger = "The Hulk "
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+              //      intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
 
                 else if(password == validPassword[3]) {
+                  //  savePreferences()
                     nameOfAvenger = "The Avengers"
-                    intent.putExtra("Name",nameOfAvenger)
+                    savePreferences(nameOfAvenger)
+                 //   intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
                 }
                 else Toast.makeText(this@LoginActivity, "Incorrect Credentials", Toast.LENGTH_LONG).show()
@@ -111,6 +147,11 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
     override fun onPause() {
         super.onPause()
         finish()
+    }
+
+    fun savePreferences(title:String) {
+        sharedPreferences.edit().putBoolean("isLoggedIn",true).apply()  // -> we can use commit() in place of apply() but they would take more resources
+        sharedPreferences.edit().putString("Title",title).apply()
     }
 
 }

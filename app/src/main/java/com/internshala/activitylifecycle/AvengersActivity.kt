@@ -1,6 +1,8 @@
 package com.internshala.activitylifecycle
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,9 +16,16 @@ class AvengersActivity : AppCompatActivity() {
 
     lateinit var etMessage: EditText
     lateinit var btnSend: Button
+    lateinit var btnLogout :Button
+
+    lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {    // This onCreate() is mandatory and need to be present in every app
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
+
+
+        sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
+
         setContentView(R.layout.activity_avengers)  // R is the res file which consists the id's of all the resources used
         // setContentView extract the layout from the layout directory and sets it on the main screen
         // in short the setContentView is responsible for setting the ui of the app
@@ -36,9 +45,12 @@ class AvengersActivity : AppCompatActivity() {
         // A bundle is used to pass data from one activity to another. This data can be in any form,
         // like strings,Integers,double etc.
 
-        if (intent != null) {
-            titleName = intent.getStringExtra("Name")
-        }
+
+        titleName = sharedPreferences.getString("Title","The Avengers")
+
+//        if (intent != null) {
+//            titleName = intent.getStringExtra("Name")
+//        }
 
 
         //  title = "The Avengers"
@@ -49,6 +61,21 @@ class AvengersActivity : AppCompatActivity() {
 
         etMessage = findViewById(R.id.etMessage)
         btnSend = findViewById(R.id.btnSend)
+        btnLogout= findViewById(R.id.btnLogout)
+
+
+        btnLogout.setOnClickListener {
+
+
+            val intent = Intent(this@AvengersActivity,LoginActivity::class.java)
+            startActivity(intent)
+            sharedPreferences.edit().clear().apply()
+            finish()
+
+        }
+
+
+
 
 
         btnSend.setOnClickListener {

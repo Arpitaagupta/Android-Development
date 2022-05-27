@@ -1,0 +1,71 @@
+
+When we login to a app and when we again visit the app we do not wish to login again for that
+we use shared preferences
+
+When we want to save some data when working with an app there are two methods to do so.
+First by creating Database
+Second by using shared preferences
+
+Database :
+1. When we want to store large amounts of data
+2. The database can be maintained on a database server which is connected to the internet, or it can
+   be maintained as a local database on the user's device
+
+Shared Preferences :
+1. When we want to store small amounts of data.
+2. Data stored in SharedPreferences is stored in our devices.
+
+Each app has its own SharedPreferences if it wants to store small amount of data
+
+To store this data we need to create an object of the SharedPreferences Class
+This object will points towards a file where the data will be saved --> They can be rewrited using diff methods.
+A app can have multiple shared preferences file
+
+It saves the value in terms of (key : value) pairs
+Eg : name : "Batman"
+     job : "vigilante"
+
+     here name is the key and job is the value
+
+
+Methods used to read data from the SharedPreferences file
+
+1. getSharedPreferences()
+   --> Used when an activity needs to use multiple SharedPreferences files
+   --> Parameters taken by the method:Name of the file,mode
+   --> Name of the file is stored as a string in the resources directory
+   --> Mode used: MODE_PRIVATE
+
+2. getPreferences()
+   --> Used when an application needs to use only one SharedPreferences file.
+   --> Parameter taken by the method: mode(only) // -> no name of file since it has only 1 file
+   --> Mode used: MODE_PRIVATE
+
+NOTE : -> An app can have only use on of these methods
+
+Various Modes used in SharedPreferences
+
+MODE_APPEND -->	                      This will append the new preferences with the already existing preferences.
+MODE_ENABLE_WRITE_AHEAD_LOGGING -->	  When this mode is used, every database operation will be kept in the log.
+MODE_MULTI_PROCESS -->		          This method will check for modification of preferences even if the sharedpreference instance has already been loaded.
+MODE_PRIVATE -->		              By setting this mode, the file can only be accessed by the calling application.
+MODE_WORLD_READABLE -->		          This mode allows other applications to read the preferences.
+MODE_WORLD_WRITEABLE -->		      This mode allows other applications to write the preferences.
+
+
+Steps :
+1. intialise a variable named as sharePreferences using lateinit keyword
+2. Create an object of the SharedPreferences inside onCreate()
+
+STEPS TO CHECK WHICH SCREEN NEEDS TO BE OPENED BASED ON THE SharedPreferences
+
+1. When a user logs in for the first time, save a boolean value(true) inside the preferences file.
+2. The next time the user comes to the app,check what the boolean value for that user's login status is.
+3. If it is 'true',the user will directly be taken to the next activity else he will be shown the login activity
+
+Problems in the app :
+1. There was no title in the toolbar when we came back to the app.
+2. The app crashed when we pressed the back button.
+
+
+

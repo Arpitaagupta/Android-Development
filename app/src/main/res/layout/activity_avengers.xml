@@ -346,6 +346,30 @@
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="18sp"
+                android:backgroundTint="#e91e63"
+                android:padding="8dp"
+                android:layout_margin="10sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
 
 
 
