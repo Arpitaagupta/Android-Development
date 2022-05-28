@@ -66,8 +66,11 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
 
         txtForgotPassword.setOnClickListener() {
-            Toast.makeText(this@LoginActivity,"Clicked on forgot password",Toast.LENGTH_LONG).show()
+               val intent = Intent(this@LoginActivity,ResetPassword::class.java)
+               startActivity(intent)
         }
+
+
 
 
 
