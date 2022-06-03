@@ -41,7 +41,7 @@ Methods used to read data from the SharedPreferences file
    --> Parameter taken by the method: mode(only) // -> no name of file since it has only 1 file
    --> Mode used: MODE_PRIVATE
 
-NOTE : -> An app can have only use on of these methods
+NOTE : -> An app can use only one of these methods
 
 Various Modes used in SharedPreferences
 

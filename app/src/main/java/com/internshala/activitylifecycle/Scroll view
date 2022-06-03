@@ -30,6 +30,8 @@ or else we can directly change the name of the app
 
 ** create activity name by following the conventions of the Class naming
 
+--> To change the launcher activity :
+
 *** we need to mention every new activity we create in the manifests file
   Now android studio does this automatically for us what we need to is cut the intent
   filter tag from current activity and paste it in the new activity

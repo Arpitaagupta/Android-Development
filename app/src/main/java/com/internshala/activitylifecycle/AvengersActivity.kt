@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class AvengersActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class AvengersActivity : AppCompatActivity() {
     lateinit var etMessage: EditText
     lateinit var btnSend: Button
     lateinit var btnLogout :Button
+    lateinit var marqueeText : TextView
 
     lateinit var sharedPreferences: SharedPreferences
 
@@ -62,6 +64,9 @@ class AvengersActivity : AppCompatActivity() {
         etMessage = findViewById(R.id.etMessage)
         btnSend = findViewById(R.id.btnSend)
         btnLogout= findViewById(R.id.btnLogout)
+
+        marqueeText = findViewById(R.id.marqueeText)
+        marqueeText.isSelected = true
 
 
         btnLogout.setOnClickListener {

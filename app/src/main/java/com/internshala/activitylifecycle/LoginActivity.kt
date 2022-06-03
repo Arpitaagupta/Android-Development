@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
     lateinit var txtRegister: TextView
 
     val validMobileNumber = "0123456789"   // --> ye value hmne set ki hai
-   // val validPassword = "thanos"  --> this should be used when only one password is there but when mmultiple passwords are there we will use array
+   // val validPassword = "thanos"  --> this should be used when only one password is there but when multiple passwords are there we will use array
     val validPassword = arrayOf("tony","steve","bruce","thanos")
 
 

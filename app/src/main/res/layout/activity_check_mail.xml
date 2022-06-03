@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckMailActivity">
+
+    <ImageView
+        android:id="@+id/imgGmail"
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:src="@drawable/gmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/txtCheckMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your mail"
+        android:textSize="30sp"
+        android:layout_below="@id/imgGmail"
+        android:fontFamily="@font/opensans_extrabold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtPasswordResetInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCheckMail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="22dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="We have sent a password recover instructions to your email."
+        android:textColor="#757575"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnOpenEmailApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPasswordResetInstructions"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="22dp"
+        android:backgroundTint="#ffd600"
+        android:fontFamily="@font/robotomono_bold"
+        android:padding="8dp"
+        android:text="open email app"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip, I'll confirm later"
+        android:layout_below="@id/btnOpenEmailApp"
+        android:layout_marginTop="15dp"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/opensans_bold"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
