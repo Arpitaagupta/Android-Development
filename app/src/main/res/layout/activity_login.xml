@@ -11,7 +11,7 @@
         android:id="@+id/imgLogo"
         android:layout_width="240dp"
         android:layout_height="100dp"
-        android:src="@drawable/avengers_logo"
+        android:src="@drawable/codeguruu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
 

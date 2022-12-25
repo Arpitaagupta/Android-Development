@@ -13,7 +13,7 @@ import android.widget.Toast
 class AvengersActivity : AppCompatActivity() {
 
 
-    var titleName: String? = "Avengers"
+    var titleName: String? = "Codeguru"
 
     lateinit var etMessage: EditText
     lateinit var btnSend: Button
@@ -24,6 +24,9 @@ class AvengersActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {    // This onCreate() is mandatory and need to be present in every app
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
+
+
+        Toast.makeText(this@AvengersActivity, "Firbase Connection Success",Toast.LENGTH_LONG).show()
 
 
         sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)

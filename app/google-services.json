@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552360830130",
+    "project_id": "avengers-e4655",
+    "storage_bucket": "avengers-e4655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552360830130:android:147fd7769ea45fcc9d15ab",
+        "android_client_info": {
+          "package_name": "com.internshala.activitylifecycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552360830130-0cfjjetr43eglo1745hmvhkrlipujq32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjVyCwBAE4fbHsHSA_9NsRKuS7xiPF4O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552360830130-0cfjjetr43eglo1745hmvhkrlipujq32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

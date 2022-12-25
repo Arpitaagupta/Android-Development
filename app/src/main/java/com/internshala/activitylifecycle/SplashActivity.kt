@@ -13,24 +13,17 @@ class SplashActivity : AppCompatActivity() {
 
 
 
-        // This is used to hide the status bar and make
-        // the splash screen as a full screen activity.
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
+
 
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this@SplashActivity, LoginActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
-        }, 3000) // 3000 is the delayed time in milliseconds.
+        }, 2000)
 
 
-
-        title = "Splash Screen"
+        title = "Codeguru"
     }
 
 

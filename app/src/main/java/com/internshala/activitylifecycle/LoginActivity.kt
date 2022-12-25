@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
     // Creating object of SharedPreferences class
 
-    lateinit var sharedPreferences: SharedPreferences // -> Creating object of sharePreferences class
+    lateinit var sharedPreferences: SharedPreferences // -> Creating object of SharedPreferences class
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +47,8 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
              startActivity(intent)
              finish()
          }
+
+
 
 
 

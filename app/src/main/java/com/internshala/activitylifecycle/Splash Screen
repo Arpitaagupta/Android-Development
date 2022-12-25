@@ -4,19 +4,16 @@ To create a splash screen :
 2. In the xml file of this activity add the views
 3. Then in the SplashActivity.kt file
 
-// This is used to hide the status bar and make
-// the splash screen as a full screen activity.
+/*This is how we change the activity with a delay of 2000 milliseconds.
+        * The delay time can be changed by changing the value of the time in milliseconds
+        * Here the activity is displayed for 2 seconds and then the Handler starts the new process after 2 seconds
+        * the new task is the one which we write inside the handler.
+        * startActivity() is used to start the new activity, whereas finish() is used to destroy the current activity.
+        * We use finish() here so the when the user presses back button, she is not redirected to this activity*/
 
-       window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
 
-        // we used the postDelayed(Runnable, time) method
-       // to send a message with a delayed time.
 
         Handler().postDelayed({
-            val intent = Intent(this@SplashActivity, LoginActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
-        }, 3000) // 3000 is the delayed time in milliseconds.
+        }, 2000)
