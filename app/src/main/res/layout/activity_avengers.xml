@@ -207,8 +207,8 @@
                 android:id="@+id/imgBlackPanther"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/Ansible"
-                android:layout_margin="20dp"/>
+                android:src="@drawable/jenkins"
+                android:layout_margin="20dp" />
 
             <TextView
                 android:id="@+id/txtNameBlackPanther"

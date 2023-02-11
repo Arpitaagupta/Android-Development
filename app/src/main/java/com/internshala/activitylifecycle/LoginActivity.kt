@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
     val validMobileNumber = "0123456789"   // --> ye value hmne set ki hai
    // val validPassword = "thanos"  --> this should be used when only one password is there but when multiple passwords are there we will use array
-    val validPassword = arrayOf("tony","steve","bruce","thanos")
+    val validPassword = arrayOf("Arpita","Abhishek","bruce","thanos")
 
 
     // Creating object of SharedPreferences class
@@ -100,7 +100,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
                 if(password == validPassword[0]) {
 
 
-                    nameOfAvenger = "Iron Man"
+                    nameOfAvenger = "Heyy Arpita"
                     savePreferences(nameOfAvenger)
 
                  //   intent.putExtra("Name",nameOfAvenger)
@@ -110,7 +110,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
                 else if(password == validPassword[1]) {
 
-                    nameOfAvenger = "Captain America"
+                    nameOfAvenger = "Heyy Abhishek"
                     savePreferences(nameOfAvenger)
                 //    intent.putExtra("Name",nameOfAvenger)
                     startActivity(intent)
