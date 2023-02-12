@@ -5,4 +5,11 @@
     <string name="password">Enter Password</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="preferences_file_name">Avengers Preferences</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about_app">About App</string>
+    <string name="welcome_to_codeguru_all_your_coding_journey_at_one_place">Welcome to Codeguru😊!! All your Coding Journey at one place!!</string>
+    <string name="log_out">Log Out</string>
+    <string name="join_community">Join Community</string>
 </resources>
