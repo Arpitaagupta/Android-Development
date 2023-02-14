@@ -3,12 +3,23 @@ package com.internshala.activitylifecycle
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.CookieManager
+import android.webkit.WebView
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import com.auth0.android.Auth0
+import com.auth0.android.authentication.AuthenticationException
+import com.auth0.android.callback.Callback
+import com.auth0.android.provider.WebAuthProvider
+import java.net.CookieHandler
+
 
 class AvengersActivity : AppCompatActivity() {
 
@@ -22,16 +33,21 @@ class AvengersActivity : AppCompatActivity() {
 
     lateinit var sharedPreferences: SharedPreferences
 
+    private lateinit var webView: WebView
+
+    var userIsAuthenticated = false
+    lateinit var account: Auth0
+
     override fun onCreate(savedInstanceState: Bundle?) {    // This onCreate() is mandatory and need to be present in every app
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
 
 
-        Toast.makeText(this@AvengersActivity, "Firbase Connection Success",Toast.LENGTH_LONG).show()
+  //      Toast.makeText(this@AvengersActivity, "Firbase Connection Success",Toast.LENGTH_LONG).show()
 
 
         sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
 
-        setContentView(R.layout.activity_avengers)  // R is the res file which consists the id's of all the resources used
+        setContentView(R.layout.activity_main_dashboard)  // R is the res file which consists the id's of all the resources used
         // setContentView extract the layout from the layout directory and sets it on the main screen
         // in short the setContentView is responsible for setting the ui of the app
 
@@ -72,13 +88,15 @@ class AvengersActivity : AppCompatActivity() {
         marqueeText.isSelected = true
 
 
+
         btnLogout.setOnClickListener {
 
+           logout()
 
             val intent = Intent(this@AvengersActivity,LoginActivity::class.java)
             startActivity(intent)
-            sharedPreferences.edit().clear().apply()
-            finish()
+           // sharedPreferences.edit().clear().apply()
+          //  finish()
 
         }
 
@@ -103,42 +121,59 @@ class AvengersActivity : AppCompatActivity() {
         }
 
 
-        /*
-    override fun onStart() {
-
-        super.onStart()
-        println("OnStart called")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        println("onResume called")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        println("OnPause called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        println("OnStop called")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        println("onRestart called")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        println("onDestroy")
-    }
-
-
-     */
-
 
     }
+
+
+    private fun logout() {
+        WebAuthProvider.logout(account)
+            .withScheme(getString(R.string.com_auth0_scheme))
+            .start(
+                this,
+                object : Callback<Void?, AuthenticationException> {
+                    override fun onSuccess(result: Void?) {
+                        // The user has been logged out!
+                        Toast.makeText(
+                            this@AvengersActivity,
+                            "Successfully logged out!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                        CookieManager.getInstance().removeAllCookies(null)
+                        CookieManager.getInstance().flush()
+                        webView.clearCache(true)
+
+                        // Send logout request using Volley
+                        val queue = Volley.newRequestQueue(this@AvengersActivity)
+                        val logoutUrl = "https://codeguru.us.auth0.com/v2/logout?federated"
+                        val stringRequest = StringRequest(
+                            Request.Method.GET, logoutUrl,
+                            { response ->
+                                // Handle the response
+                                Toast.makeText(this@AvengersActivity, "Successfully logged out!", Toast.LENGTH_SHORT).show()
+                                webView.loadUrl("app://codeguru.us.auth0.com/android/com.internshala.activitylifecycle/callback")
+                            },
+                            { error ->
+                                // Handle the error
+                                Toast.makeText(this@AvengersActivity, "Couldn't Logout!", Toast.LENGTH_SHORT).show()
+                            }
+                        )
+                        queue.add(stringRequest)
+                    }
+
+                    override fun onFailure(error: AuthenticationException) {
+                        Toast.makeText(
+                            this@AvengersActivity,
+                            "Couldn't Logout!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+            )
+    }
+
+
+
+
 }
 

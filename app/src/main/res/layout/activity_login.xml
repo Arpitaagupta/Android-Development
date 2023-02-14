@@ -16,7 +16,7 @@
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/etMobileNumber"
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="15dp"
@@ -24,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:padding="7dp"
         android:layout_below="@id/imgLogo"
-        android:hint="@string/mobile_number"
+        android:hint="@string/email"
         android:fontFamily="@font/opensans_bold"
         android:textColorHint="#1080AD"
         android:backgroundTint="#1031ad"
@@ -41,7 +41,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:padding="7dp"
-        android:layout_below="@id/etMobileNumber"
+        android:layout_below="@id/etEmail"
         android:hint="@string/password"
         android:fontFamily="@font/opensans_bold"
         android:textColorHint="#1080AD"
