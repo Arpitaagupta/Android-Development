@@ -3,19 +3,39 @@
     android:layout_width="match_parent"
     android:layout_height="240dp"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/gradient_3">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="180dp"
         android:src="@drawable/codeguru_logo"
+        android:contentDescription="logo of app"
         />
 
     <TextView
+        android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#00bcd4"
+        android:textColor="#fdd835"
         android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerHorizontal="true"
         android:text="CodeGuru"/>
+
+    <TextView
+        android:id="@+id/marquee_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textStyle="italic"
+        android:textColor="#80deea"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:text="All your Coding Journey at one place!" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

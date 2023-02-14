@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_lang"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#f73378"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/goLang_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/golang"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/about_goLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go is an open source programming language created by Google.  As one of the fastest growing languages in terms of popularity, its a great time to pick up the basics of Go!
+
+This course is designed to get you up and running as fast as possible with Go.  We'll quickly cover the basics, then dive into some of the more advanced features of the language."
+            android:layout_toRightOf="@id/goLang_logo"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Free Trial for 3 Days"
+        android:backgroundTint="#00695f"
+        android:textColor="#bbdefb"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Referral Code"
+        android:layout_margin="20dp"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Click here to learn Go Lang for free!"
+        android:backgroundTint="#fbc02d"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/about_java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to Learn more about free courses!"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#2962ff"/>
+
+
+</LinearLayout>
