@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0ece1">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
@@ -19,7 +27,7 @@
     Textview is used here to add the text which we want to display on the screen.Here important attributes are:
     i)   android:singleLine="true"... so that our text will show only in one line
     ii)  android:ellipsize="marquee"... to add marquee to our text
-    iii) android:marqueeRepeatLimit="marquee_forever"...so that marquee will repeat infinitely
+    iii) android:marqueeRepeatLimit="marquee_fo rever"...so that marquee will repeat infinitely
     iv)  android:scrollHorizontally="true"... so that text will scroll horizontally
     -->
             <TextView
@@ -33,7 +41,7 @@
                 android:padding="10dp"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:text="Welcome to Codeguru😊!! All your Coding Journey at one place!!"
+                android:text="@string/welcome_to_codeguru_all_your_coding_journey_at_one_place"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -52,7 +60,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/java"
-                android:layout_margin="20dp"/>
+                android:layout_margin="20dp"
+                android:contentDescription="Java Course" />
 
             <TextView
                 android:id="@+id/txtName"
@@ -195,56 +204,54 @@
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBlackPanther"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/jenkins" />
+
+                <TextView
+                    android:id="@+id/txtNameBlackPanther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/imgBlackPanther"
+                    android:text="Ansible"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEmailBlackPanther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtNameBlackPanther"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/imgBlackPanther"
+                    android:text="tony@pantherindustries.com"
+                    android:textColor="#ff3d00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumberBlackPanther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtEmailBlackPanther"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/imgBlackPanther"
+                    android:text="91 2562278283"
+                    android:textColor="#2196f3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imgBlackPanther"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/jenkins"
-                android:layout_margin="20dp" />
-
-            <TextView
-                android:id="@+id/txtNameBlackPanther"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_toRightOf="@id/imgBlackPanther"
-                android:text="Ansible"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txtEmailBlackPanther"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tony@pantherindustries.com"
-                android:layout_toRightOf="@id/imgBlackPanther"
-                android:layout_below="@id/txtNameBlackPanther"
-                android:textSize="18sp"
-                android:layout_marginTop="15dp"
-                android:textStyle="bold"
-                android:textColor="#ff3d00"/>
-
-            <TextView
-                android:id="@+id/txtPhoneNumberBlackPanther"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgBlackPanther"
-                android:text="91 2562278283"
-                android:layout_below="@id/txtEmailBlackPanther"
-                android:textSize="18sp"
-                android:layout_marginTop="15dp"
-                android:textStyle="bold"
-                android:textColor="#2196f3"/>
-
+            </RelativeLayout>
 
 
         </RelativeLayout>
@@ -409,25 +416,15 @@
                 android:fontFamily="@font/opensans_bold"
                 android:textStyle="bold"/>
 
-
-
-
-
-
         </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
 
 </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,8 +1,25 @@
 <resources>
     <string name="app_name">Activity Lifecycle</string>
     <string name="new_app_name">CodeGuru</string>
-    <string name="mobile_number">Enter mobile no.</string>
+    <string name="email">Enter email</string>
     <string name="password">Enter Password</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="preferences_file_name">Avengers Preferences</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about_app">About App</string>
+    <string name="welcome_to_codeguru_all_your_coding_journey_at_one_place">Welcome to Codeguru😊!! All your Coding Journey at one place!!</string>
+    <string name="log_out">Log Out</string>
+    <string name="join_community">Join Community</string>
+
+    <string name="com_auth0_domain">codeguru.us.auth0.com</string>
+    <string name="com_auth0_client_id">hQuYnECWQJKZKsFk8OBMlZypyrSRdL1b</string>
+
+    <string name="com_auth0_scheme">app</string>
+    <string name="login">"Login "</string>
+    <string name="logout">logout</string>
+    <string name="Abhishek">user</string>
+    <string name="emailofuser">Email of User</string>
+
 </resources>
