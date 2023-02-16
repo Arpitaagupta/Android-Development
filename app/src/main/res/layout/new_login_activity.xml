@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_4">
+
+    <ImageView
+    android:id="@+id/imgCircleLogo"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:src="@drawable/codeguru_circle"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/letsGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#b3e5fc"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgCircleLogo"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Let's Get Started"/>
+
+    <TextView
+        android:id="@+id/appslogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/letsGetStarted"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Unleash the power of coding with Code Guru: your one-stop shop for all coding resources!"/>
+
+    <Button
+        android:id="@+id/joinNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Now"
+        android:layout_below="@+id/appslogan"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#bbdefb"
+        android:textColor="#0d47a1"
+        android:fontFamily="@font/opensans_bold"
+        android:padding="18dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+
+
+
+</RelativeLayout>

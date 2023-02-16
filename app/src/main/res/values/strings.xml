@@ -12,6 +12,7 @@
     <string name="welcome_to_codeguru_all_your_coding_journey_at_one_place">Welcome to Codeguru😊!! All your Coding Journey at one place!!</string>
     <string name="log_out">Log Out</string>
     <string name="join_community">Join Community</string>
+<<<<<<< HEAD
 
     <string name="com_auth0_domain">codeguru.us.auth0.com</string>
     <string name="com_auth0_client_id">hQuYnECWQJKZKsFk8OBMlZypyrSRdL1b</string>
@@ -22,4 +23,14 @@
     <string name="Abhishek">user</string>
     <string name="emailofuser">Email of User</string>
 
+=======
+    <string name="downloads">Downloads</string>
+    <string name="notice_board">Notice Board</string>
+    <string name="check_your_progess">Check Your Progess</string>
+    <string name="object_oriented_programming_structures_java">Object Oriented Programming Structures - Java</string>
+    <string name="full_stack_web_development">Full Stack Web Development</string>
+    <string name="git_and_github">Git and GitHub</string>
+    <string name="data_structure_and_algorithms_using_java">Data Structure and Algorithms Using JAVA</string>
+    <string name="go_lang">Go Lang</string>
+>>>>>>> ea2017fb70ef546f81e9b4f995c8d83a54173d4b
 </resources>

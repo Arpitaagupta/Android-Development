@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25sp"
+                android:textColor="#006064"
                 android:ellipsize="marquee"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:layout_alignParentTop="true"
@@ -44,11 +44,6 @@
                 android:text="@string/welcome_to_codeguru_all_your_coding_journey_at_one_place"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-
-
-
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -56,7 +51,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgTonyStark"
+                android:id="@+id/java_course"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/java"
@@ -68,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Java"
-                android:layout_toRightOf="@id/imgTonyStark"
+                android:layout_toRightOf="@id/java_course"
                 android:textSize="18sp"
                 android:layout_marginTop="25dp"
                 android:textStyle="bold"
@@ -78,27 +73,371 @@
                 android:id="@+id/txtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tony@starkindustries.com"
-                android:layout_toRightOf="@id/imgTonyStark"
+                android:text="Starts on 23 February | Ends on 30 May "
+                android:layout_toRightOf="@id/java_course"
                 android:layout_below="@id/txtName"
-                android:textSize="18sp"
+                android:textSize="8sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
-                android:textColor="#ff3d00"/>
+                android:textColor="#1b5e20"/>
 
             <TextView
                 android:id="@+id/txtPhoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgTonyStark"
-                android:text="91 28282939"
+                android:layout_toRightOf="@id/java_course"
+                android:text="Real Time Projects | Doubt clearing sessions one to one"
                 android:layout_below="@id/txtEmail"
-                android:textSize="18sp"
+                android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
 
+            <Button
+                android:id="@+id/btnExplore"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/java_course"
+                android:layout_below="@+id/txtPhoneNumber"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
 
+            <Button
+                android:id="@+id/btnBuyNow"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplore"
+                android:layout_below="@+id/txtPhoneNumber"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/WebDev"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/web"
+                android:layout_margin="20dp"
+                android:contentDescription="Web Dev" />
+
+            <TextView
+                android:id="@+id/txtNameWebDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Stack Web Development"
+                android:layout_toRightOf="@id/WebDev"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailWebDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 20 February | Ends on 30 June "
+                android:layout_toRightOf="@id/WebDev"
+                android:layout_below="@id/txtNameWebDev"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberWebDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/WebDev"
+                android:text="Real Time Projects | Html | CSS | PHP| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailWebDev"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreWebDev"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/WebDev"
+                android:layout_below="@+id/txtPhoneNumberWebDev"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowWebDev"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreWebDev"
+                android:layout_below="@+id/txtPhoneNumberWebDev"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/GitHub"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/github"
+                android:layout_margin="20dp"
+                android:contentDescription="Git and GitHub" />
+
+            <TextView
+                android:id="@+id/txtNameGitHub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Git and GitHub"
+                android:layout_toRightOf="@id/GitHub"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailGitHub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 day Course | Recorded Free Lecture  "
+                android:layout_toRightOf="@id/GitHub"
+                android:layout_below="@id/txtNameGitHub"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberGitHub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/GitHub"
+                android:text="Schedule Live Interactive at Rs.200 | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailGitHub"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreGitHub"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/GitHub"
+                android:layout_below="@+id/txtPhoneNumberGitHub"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowGitHub"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreGitHub"
+                android:layout_below="@+id/txtPhoneNumberGitHub"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dsaWithJava"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/dsa_using_java"
+                android:layout_margin="20dp"
+                android:contentDescription="DSA with Java" />
+
+            <TextView
+                android:id="@+id/txtNameDsaWithJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DSA with Java"
+                android:layout_toRightOf="@id/dsaWithJava"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailDsaWithJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 23 March | Ends on 30 May "
+                android:layout_toRightOf="@id/dsaWithJava"
+                android:layout_below="@id/txtNameDsaWithJava"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberDsaWithJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dsaWithJava"
+                android:text="Real Time Projects| Weekly Practice Tests | 150+ Live Interactive Classes | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailDsaWithJava"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreDsaWithJava"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/dsaWithJava"
+                android:layout_below="@+id/txtPhoneNumberDsaWithJava"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowDsaWithJava"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreDsaWithJava"
+                android:layout_below="@+id/txtPhoneNumberDsaWithJava"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgGoLang"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/golang" />
+
+            <TextView
+                android:id="@+id/txtNameGoLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/imgGoLang"
+                android:text="Go Lang"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmailGoLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 20 February | Ends on 20 June"
+                android:layout_toRightOf="@id/imgGoLang"
+                android:layout_below="@id/txtNameGoLang"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberGoLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgGoLang"
+                android:text="Project Guidance | Internship | 200+ Live Interactive Classes | One to One Mentor session for Doubts Clearing"
+                android:layout_below="@id/txtEmailGoLang"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreGoLang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgGoLang"
+                android:layout_below="@+id/txtPhoneNumberGoLang"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowGoLang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreGoLang"
+                android:layout_below="@+id/txtPhoneNumberGoLang"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -107,7 +446,637 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgSteveRogers"
+                android:id="@+id/Prometheus"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/prometheus"
+                android:layout_margin="20dp"
+                android:contentDescription="Prometheus" />
+
+            <TextView
+                android:id="@+id/txtNamePrometheus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prometheus"
+                android:layout_toRightOf="@id/Prometheus"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailPrometheus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 25 February | Ends on 15 June "
+                android:layout_toRightOf="@id/Prometheus"
+                android:layout_below="@id/txtNamePrometheus"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberPrometheus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Prometheus"
+                android:text="50+ Real Time Industry Based Projects | 200+ Live Interactive Classes| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailPrometheus"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExplorePrometheus"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Prometheus"
+                android:layout_below="@+id/txtPhoneNumberPrometheus"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowPrometheus"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplorePrometheus"
+                android:layout_below="@+id/txtPhoneNumberPrometheus"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/NodeJs"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/nodejs"
+                android:layout_margin="20dp"
+                android:contentDescription="Node Js" />
+
+            <TextView
+                android:id="@+id/txtNameNodeJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Node Js"
+                android:layout_toRightOf="@id/NodeJs"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailNodeJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 21 February | Ends on 30 April "
+                android:layout_toRightOf="@id/NodeJs"
+                android:layout_below="@id/txtNameNodeJs"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberNodeJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/NodeJs"
+                android:text="Real Time Projects | NodeJs| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailNodeJs"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreNodeJs"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/NodeJs"
+                android:layout_below="@+id/txtPhoneNumberNodeJs"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowNodeJs"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreNodeJs"
+                android:layout_below="@+id/txtPhoneNumberNodeJs"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/DS"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/data_science"
+                android:layout_margin="20dp"
+                android:contentDescription="Data Science" />
+
+            <TextView
+                android:id="@+id/txtNameDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Science - Master"
+                android:layout_toRightOf="@id/DS"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 25 February | Ends on 15 June "
+                android:layout_toRightOf="@id/DS"
+                android:layout_below="@id/txtNameDS"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/DS"
+                android:text="50+ Real Time Industry Based Projects | 200+ Live Interactive Classes| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailDS"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreDS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/DS"
+                android:layout_below="@+id/txtPhoneNumberDS"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowDS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreDS"
+                android:layout_below="@+id/txtPhoneNumberDS"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dbms"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/dbms"
+                android:layout_margin="20dp"
+                android:contentDescription="DBMS" />
+
+            <TextView
+                android:id="@+id/txtNameDbms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Base Management System"
+                android:layout_toRightOf="@id/dbms"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailDbms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 11 January | Ends on 30 April "
+                android:layout_toRightOf="@id/dbms"
+                android:layout_below="@id/txtNameDbms"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberDbms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dbms"
+                android:text="Real Time Projects | SQL | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailDbms"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreDbms"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/dbms"
+                android:layout_below="@+id/txtPhoneNumberDbms"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowDbms"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreDbms"
+                android:layout_below="@+id/txtPhoneNumberDbms"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Puppet"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/puppet"
+                android:layout_margin="20dp"
+                android:contentDescription="Puppet" />
+
+            <TextView
+                android:id="@+id/txtNamePuppet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puppet"
+                android:layout_toRightOf="@id/Puppet"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailPuppet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 21 February | Ends on 30 June "
+                android:layout_toRightOf="@id/Puppet"
+                android:layout_below="@id/txtNamePuppet"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberPuppet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Puppet"
+                android:text="Real Time Projects | 200+ Interactive Live Classes | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailPuppet"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExplorePuppet"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Puppet"
+                android:layout_below="@+id/txtPhoneNumberPuppet"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowPuppet"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplorePuppet"
+                android:layout_below="@+id/txtPhoneNumberPuppet"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Js"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/js"
+                android:layout_margin="20dp"
+                android:contentDescription="Java Script" />
+
+            <TextView
+                android:id="@+id/txtNameJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Script"
+                android:layout_toRightOf="@id/Js"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 20 February | Ends on 30 June "
+                android:layout_toRightOf="@id/Js"
+                android:layout_below="@id/txtNameJs"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberJs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Js"
+                android:text="Real Time Projects | JS Event Handling | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailJs"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreJs"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Js"
+                android:layout_below="@+id/txtPhoneNumberJs"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowJs"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreJs"
+                android:layout_below="@+id/txtPhoneNumberJs"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Postman"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/postman"
+                android:layout_margin="20dp"
+                android:contentDescription="Postman" />
+
+            <TextView
+                android:id="@+id/txtNamePostman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postan API"
+                android:layout_toRightOf="@id/Postman"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailPostman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 2 February | Ends on 15 March "
+                android:layout_toRightOf="@id/Postman"
+                android:layout_below="@id/txtNamePostman"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberPostman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Postman"
+                android:text="API Testing | API Workflow | Postman Student Expert | Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailPostman"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExplorePostman"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Postman"
+                android:layout_below="@+id/txtPhoneNumberPostman"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowPostman"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplorePostman"
+                android:layout_below="@+id/txtPhoneNumberPostman"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Angular"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/angular"
+                android:layout_margin="20dp"
+                android:contentDescription="Angular" />
+
+            <TextView
+                android:id="@+id/txtNameAngular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angular for Web Development"
+                android:layout_toRightOf="@id/Angular"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailAngular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 20 February | Ends on 30 June "
+                android:layout_toRightOf="@id/Angular"
+                android:layout_below="@id/txtNameAngular"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberAngular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Angular"
+                android:text="Real Time Projects | Html | Angular| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailAngular"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreAngular"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Angular"
+                android:layout_below="@+id/txtPhoneNumberAngular"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowAngular"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreAngular"
+                android:layout_below="@+id/txtPhoneNumberAngular"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgJenkins"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="20dp"
@@ -117,39 +1086,69 @@
                 android:src="@drawable/jenkins" />
 
             <TextView
-                android:id="@+id/txtNameSteve"
+                android:id="@+id/txtNameJenkins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_toRightOf="@id/imgSteveRogers"
+                android:layout_toRightOf="@id/imgJenkins"
                 android:text="Jenkins"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtEmailSteve"
+                android:id="@+id/txtEmailJenkins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tony@steveindustries.com"
-                android:layout_toRightOf="@id/imgSteveRogers"
-                android:layout_below="@id/txtNameSteve"
-                android:textSize="18sp"
+                android:text="Started | Ends on 30 April"
+                android:layout_toRightOf="@id/imgJenkins"
+                android:layout_below="@id/txtNameJenkins"
+                android:textSize="8sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
-                android:textColor="#ff3d00"/>
+                android:textColor="#1b5e20"/>
 
             <TextView
-                android:id="@+id/txtPhoneNumberSteve"
+                android:id="@+id/txtPhoneNumberJenkins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgSteveRogers"
-                android:text="91 2562278283"
-                android:layout_below="@id/txtEmailSteve"
-                android:textSize="18sp"
+                android:layout_toRightOf="@id/imgJenkins"
+                android:text="50+ Hands On Real Time Projects | Doubt Clearing sessions one to one "
+                android:layout_below="@id/txtEmailJenkins"
+                android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExplore"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgJenkins"
+                android:layout_below="@+id/txtPhoneNumberJenkins"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowJenkins"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplore"
+                android:layout_below="@+id/txtPhoneNumberJenkins"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
 
 
 
@@ -160,7 +1159,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgThor"
+                android:id="@+id/imgPython"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="20dp"
@@ -170,40 +1169,41 @@
                 android:src="@drawable/python" />
 
             <TextView
-                android:id="@+id/txtNameThor"
+                android:id="@+id/txtNamePython"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_toRightOf="@id/imgThor"
+                android:layout_toRightOf="@id/imgPython"
                 android:text="Python"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtEmailThor"
+                android:id="@+id/txtEmailPython"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tony@thorindustries.com"
-                android:layout_toRightOf="@id/imgThor"
-                android:layout_below="@id/txtNameThor"
-                android:textSize="18sp"
+                android:text="Starts on 2 March | Ends on 15 June"
+                android:layout_toRightOf="@id/imgPython"
+                android:layout_below="@id/txtNamePython"
+                android:textSize="8sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
-                android:textColor="#ff3d00"/>
+                android:textColor="#1b5e20"/>
 
             <TextView
-                android:id="@+id/txtPhoneNumberThor"
+                android:id="@+id/txtPhoneNumberPython"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgThor"
-                android:text="91 2562278283"
-                android:layout_below="@id/txtEmailThor"
-                android:textSize="18sp"
+                android:layout_toRightOf="@id/imgPython"
+                android:text="Machine Learning Projects | 50+ Hands On Real Time Projects | Doubt Clearing sessions one to one "
+                android:layout_below="@id/txtEmailPython"
+                android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
 
+<<<<<<< HEAD:app/src/main/res/layout/activity_main_dashboard.xml
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -252,6 +1252,194 @@
 
 
             </RelativeLayout>
+=======
+            <Button
+                android:id="@+id/btnExplorePython"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgPython"
+                android:layout_below="@+id/txtPhoneNumberPython"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowPython"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExplorePython"
+                android:layout_below="@+id/txtPhoneNumberPython"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Devops"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/devops"
+                android:layout_margin="20dp"
+                android:contentDescription="Devops" />
+
+            <TextView
+                android:id="@+id/txtNameDevops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DeVops"
+                android:layout_toRightOf="@id/Devops"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailDevops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 25 February | Ends on 25 June "
+                android:layout_toRightOf="@id/Devops"
+                android:layout_below="@id/txtNameDevops"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberDevops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Devops"
+                android:text="30+ Real Time Industry Based Projects | 200+ Live Interactive Classes| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailDevops"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreDevops"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Devops"
+                android:layout_below="@+id/txtPhoneNumberDevops"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowDevops"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreDevops"
+                android:layout_below="@+id/txtPhoneNumberDevops"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAnsible"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ansible"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:id="@+id/txtNameAnsible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/imgAnsible"
+                android:text="Ansible"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmailAnsible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Started | Ends on 28 February"
+                android:layout_toRightOf="@id/imgAnsible"
+                android:layout_below="@id/txtNameAnsible"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberAnsible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgAnsible"
+                android:text="20+ Projects | Live Doubts Sessions with one to one mentor"
+                android:layout_below="@id/txtEmailAnsible"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreAnsible"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgAnsible"
+                android:layout_below="@+id/txtPhoneNumberAnsible"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowAnsible"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreAnsible"
+                android:layout_below="@+id/txtPhoneNumberAnsible"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+>>>>>>> ea2017fb70ef546f81e9b4f995c8d83a54173d4b:app/src/main/res/layout/activity_avengers.xml
 
 
         </RelativeLayout>
@@ -261,7 +1449,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgHulk"
+                android:id="@+id/imgGitLab"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="20dp"
@@ -271,39 +1459,69 @@
                 android:src="@drawable/gitlab" />
 
             <TextView
-                android:id="@+id/txtNameHulk"
+                android:id="@+id/txtNameGitLab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_toRightOf="@id/imgHulk"
+                android:layout_toRightOf="@id/imgGitLab"
                 android:text="Gitlab"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtEmailHulk"
+                android:id="@+id/txtEmailGitLab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tony@bruiseindustries.com"
-                android:layout_toRightOf="@id/imgHulk"
-                android:layout_below="@id/txtNameHulk"
-                android:textSize="18sp"
+                android:text="Starts on 20 February | Ends on 20 June"
+                android:layout_toRightOf="@id/imgGitLab"
+                android:layout_below="@id/txtNameGitLab"
+                android:textSize="8sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
-                android:textColor="#ff3d00"/>
+                android:textColor="#1b5e20"/>
 
             <TextView
-                android:id="@+id/txtPhoneNumberHulk"
+                android:id="@+id/txtPhoneNumberGitLab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgHulk"
-                android:text="91 2535335"
-                android:layout_below="@id/txtEmailHulk"
-                android:textSize="18sp"
+                android:layout_toRightOf="@id/imgGitLab"
+                android:text="Project Guidance | Internship | One to One Mentor"
+                android:layout_below="@id/txtEmailGitLab"
+                android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreGitLab"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgGitLab"
+                android:layout_below="@+id/txtPhoneNumberGitLab"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowGitLab"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreGitLab"
+                android:layout_below="@+id/txtPhoneNumberGitLab"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -312,7 +1530,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgWidow"
+                android:id="@+id/imgKunernetes"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="20dp"
@@ -322,39 +1540,227 @@
                 android:src="@drawable/k8s" />
 
             <TextView
-                android:id="@+id/txtNameWidow"
+                android:id="@+id/txtNameKubernetes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_toRightOf="@id/imgWidow"
+                android:layout_toRightOf="@id/imgKunernetes"
                 android:text="Kubernetes"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtEmailWidow"
+                android:id="@+id/txtEmailKubernetes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tony@nataliaindustries.com"
-                android:layout_toRightOf="@id/imgWidow"
-                android:layout_below="@id/txtNameWidow"
-                android:textSize="18sp"
+                android:text="Starts on 15 March | Ends on 14 August"
+                android:layout_toRightOf="@id/imgKunernetes"
+                android:layout_below="@id/txtNameKubernetes"
+                android:textSize="8sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
-                android:textColor="#ff3d00"/>
+                android:textColor="#1b5e20"/>
 
             <TextView
-                android:id="@+id/txtPhoneNumberWidow"
+                android:id="@+id/txtPhoneNumberKubernetes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imgWidow"
-                android:text="91 2562278283"
-                android:layout_below="@id/txtEmailWidow"
-                android:textSize="18sp"
+                android:layout_toRightOf="@id/imgKunernetes"
+                android:text="Internship Oppurtunities | One to One doubt Sessions | 25+ Real Time Projects"
+                android:layout_below="@id/txtEmailKubernetes"
+                android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreKubernetes"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgKunernetes"
+                android:layout_below="@+id/txtPhoneNumberKubernetes"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowKubernetes"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreKubernetes"
+                android:layout_below="@+id/txtPhoneNumberKubernetes"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Kotlin"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/kotlin"
+                android:layout_margin="20dp"
+                android:contentDescription="Kotlin" />
+
+            <TextView
+                android:id="@+id/txtNameKotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kotlin"
+                android:layout_toRightOf="@id/Kotlin"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtEmailKotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 21 February | Ends on 30 March "
+                android:layout_toRightOf="@id/Kotlin"
+                android:layout_below="@id/txtNameKotlin"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberKotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Kotlin"
+                android:text="Real Time Projects | Kotlin for Android Development| Doubt clearing sessions one to one"
+                android:layout_below="@id/txtEmailKotlin"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreKotlin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/Kotlin"
+                android:layout_below="@+id/txtPhoneNumberKotlin"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowKotlin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreKotlin"
+                android:layout_below="@+id/txtPhoneNumberKotlin"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAndroidDev"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/android" />
+
+            <TextView
+                android:id="@+id/txtNameAndroidDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/imgAndroidDev"
+                android:text="Android Development"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmailAndroidDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts on 25 March | Ends on 14 May"
+                android:layout_toRightOf="@id/imgAndroidDev"
+                android:layout_below="@id/txtNameAndroidDev"
+                android:textSize="8sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#1b5e20"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumberAndroidDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgAndroidDev"
+                android:text="Kotlin | XML | One to One doubt Sessions | 25+ Real Time Projects"
+                android:layout_below="@id/txtEmailAndroidDev"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2196f3"/>
+
+            <Button
+                android:id="@+id/btnExploreAndroidDev"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="EXPLORE"
+                android:layout_toRightOf="@id/imgAndroidDev"
+                android:layout_below="@+id/txtPhoneNumberAndroidDev"
+                android:textSize="10sp"
+                android:backgroundTint="#d1c4e9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#673ab7"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBuyNowAndroidDev"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="BUY NOW"
+                android:layout_toRightOf="@id/btnExploreAndroidDev"
+                android:layout_below="@+id/txtPhoneNumberAndroidDev"
+                android:textSize="10sp"
+                android:backgroundTint="#c8e6c9"
+                android:padding="8dp"
+                android:layout_margin="8sp"
+                android:textColor="#4caf50"
+                android:fontFamily="@font/opensans_bold"
+                android:textStyle="bold"/>
 
 
 
@@ -369,7 +1775,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Write your message"
-            android:layout_below="@+id/txtPhoneNumberWidow"
+            android:layout_below="@+id/txtPhoneNumberAndroidDev"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/opensans_bold"
             android:textSize="18sp"
@@ -384,7 +1790,7 @@
 
         <Button
             android:id="@+id/btnSend"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/etMessage"
             android:backgroundTint="#22d5f3"
@@ -393,6 +1799,8 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"/>
 
