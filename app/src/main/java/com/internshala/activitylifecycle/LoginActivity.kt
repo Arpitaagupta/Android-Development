@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.view.isVisible
 import com.auth0.android.Auth0
 import com.auth0.android.authentication.AuthenticationAPIClient
 import com.auth0.android.authentication.AuthenticationException
@@ -17,8 +16,6 @@ import com.auth0.android.callback.Callback
 import com.auth0.android.provider.WebAuthProvider
 import com.auth0.android.result.Credentials
 import com.auth0.android.result.UserProfile
-
-import com.google.android.material.snackbar.Snackbar
 
 import com.internshala.activitylifecycle.databinding.ActivityMainBinding
 
@@ -111,14 +108,14 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
                        // Add a delay of 2 seconds
                        val handler = Handler()
                        handler.postDelayed({
-                           val intent = Intent(this@LoginActivity, AvengersActivity::class.java)
+                           val intent = Intent(this@LoginActivity, MainActivity::class.java)
                            startActivity(intent)
                        }, 3000)
                    }
                })
 
 
-//            val intent = Intent(this@LoginActivity, AvengersActivity::class.java)
+//            val intent = Intent(this@LoginActivity, MainActivity::class.java)
 //            startActivity(intent)
 //
 //            intent.putExtra("Name", "Hey User")
@@ -132,7 +129,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
 
         if(isLoggedIn) {
-             val intent = Intent(this@LoginActivity,AvengersActivity::class.java)
+             val intent = Intent(this@LoginActivity,MainActivity::class.java)
              startActivity(intent)
              finish()
          }
@@ -179,10 +176,10 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
           //  if ((mobileNumber == validMobileNumber) && (password == validPassword)) {
 //            if ((mobileNumber == validMobileNumber) && (validPassword.contains(password))) {
-//                val intent = Intent(this@LoginActivity, AvengersActivity::class.java)
+//                val intent = Intent(this@LoginActivity, MainActivity::class.java)
 //                startActivity(intent)
 
-            val intent = Intent(this@LoginActivity, AvengersActivity::class.java)
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
 
             if (Email == validEmail) {
 

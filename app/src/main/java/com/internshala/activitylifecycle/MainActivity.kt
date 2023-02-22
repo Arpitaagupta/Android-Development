@@ -21,7 +21,7 @@ import com.auth0.android.provider.WebAuthProvider
 import java.net.CookieHandler
 
 
-class AvengersActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
 
     var titleName: String? = "Codeguru"
@@ -42,7 +42,7 @@ class AvengersActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
 
 
-  //      Toast.makeText(this@AvengersActivity, "Firbase Connection Success",Toast.LENGTH_LONG).show()
+  //      Toast.makeText(this@MainActivity, "Firbase Connection Success",Toast.LENGTH_LONG).show()
 
 
         sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
@@ -93,7 +93,7 @@ class AvengersActivity : AppCompatActivity() {
 
            logout()
 
-            val intent = Intent(this@AvengersActivity,LoginActivity::class.java)
+            val intent = Intent(this@MainActivity,LoginActivity::class.java)
             startActivity(intent)
            // sharedPreferences.edit().clear().apply()
           //  finish()
@@ -110,11 +110,11 @@ class AvengersActivity : AppCompatActivity() {
 
             if (message?.isNotEmpty() == true) {
 
-                val intent = Intent(this@AvengersActivity, Message_Activity::class.java)
+                val intent = Intent(this@MainActivity, Message_Activity::class.java)
                 intent.putExtra("Message", message)
                 startActivity(intent)
             } else {
-                Toast.makeText(this@AvengersActivity, "Write a message!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Write a message!", Toast.LENGTH_SHORT).show()
             }
 
 
@@ -134,7 +134,7 @@ class AvengersActivity : AppCompatActivity() {
                     override fun onSuccess(result: Void?) {
                         // The user has been logged out!
                         Toast.makeText(
-                            this@AvengersActivity,
+                            this@MainActivity,
                             "Successfully logged out!",
                             Toast.LENGTH_SHORT
                         ).show()
@@ -144,18 +144,18 @@ class AvengersActivity : AppCompatActivity() {
                         webView.clearCache(true)
 
                         // Send logout request using Volley
-                        val queue = Volley.newRequestQueue(this@AvengersActivity)
+                        val queue = Volley.newRequestQueue(this@MainActivity)
                         val logoutUrl = "https://codeguru.us.auth0.com/v2/logout?federated"
                         val stringRequest = StringRequest(
                             Request.Method.GET, logoutUrl,
                             { response ->
                                 // Handle the response
-                                Toast.makeText(this@AvengersActivity, "Successfully logged out!", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@MainActivity, "Successfully logged out!", Toast.LENGTH_SHORT).show()
                                 webView.loadUrl("app://codeguru.us.auth0.com/android/com.internshala.activitylifecycle/callback")
                             },
                             { error ->
                                 // Handle the error
-                                Toast.makeText(this@AvengersActivity, "Couldn't Logout!", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@MainActivity, "Couldn't Logout!", Toast.LENGTH_SHORT).show()
                             }
                         )
                         queue.add(stringRequest)
@@ -163,7 +163,7 @@ class AvengersActivity : AppCompatActivity() {
 
                     override fun onFailure(error: AuthenticationException) {
                         Toast.makeText(
-                            this@AvengersActivity,
+                            this@MainActivity,
                             "Couldn't Logout!",
                             Toast.LENGTH_SHORT
                         ).show()

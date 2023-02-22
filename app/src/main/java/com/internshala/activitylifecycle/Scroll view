@@ -13,8 +13,8 @@ colorPrimary : this is the primary or the fundamental color of the app which per
 colorPrimaryDark : it is the color of the status bar
 colorAccent : this color is used when we want to seek users attention
 
-We can change the title of the app in the toolbar : with the help of the kotlin file i.e, AvengersActivity.kt file
-AvengersActivity.kt file -> inside OnCreate method -> Write title then put = and write the name in "".
+We can change the title of the app in the toolbar : with the help of the kotlin file i.e, MainActivity.kt file
+MainActivity.kt file -> inside OnCreate method -> Write title then put = and write the name in "".
 
 
 To change the name of the app -:

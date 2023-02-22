@@ -32,5 +32,10 @@
     <string name="git_and_github">Git and GitHub</string>
     <string name="data_structure_and_algorithms_using_java">Data Structure and Algorithms Using JAVA</string>
     <string name="go_lang">Go Lang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
 
 </resources>
