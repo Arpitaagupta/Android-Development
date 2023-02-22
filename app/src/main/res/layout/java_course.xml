@@ -71,7 +71,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/about_java"
+        android:id="@+id/about1_java"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Click here to Learn more about free courses!"

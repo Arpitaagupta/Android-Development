@@ -71,8 +71,8 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 
         title = "Log In"
 
-        etEmail = findViewById(R.id.etEmail)
-        etPassword = findViewById(R.id.etPassword)
+//        etEmail = findViewById(R.id.etEmail)
+//        etPassword = findViewById(R.id.etPassword)
         btnLogin = findViewById(R.id.btnLogin)
         txtForgotPassword = findViewById(R.id.txtForgotPassword)
         txtRegister = findViewById(R.id.txtRegister)
@@ -106,7 +106,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
                        // Get the access token from the credentials object.
                        // This can be used to call APIs
                        val accessToken = result.accessToken
-                       showUserProfile(accessToken)
+                   //    showUserProfile(accessToken)
 
                        // Add a delay of 2 seconds
                        val handler = Handler()

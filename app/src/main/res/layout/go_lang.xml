@@ -72,7 +72,7 @@ This course is designed to get you up and running as fast as possible with Go.  
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/about_java"
+        android:id="@+id/about1_golang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Click here to Learn more about free courses!"

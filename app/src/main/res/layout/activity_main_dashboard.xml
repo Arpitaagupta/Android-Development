@@ -54,9 +54,12 @@
                 android:id="@+id/java_course"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/java"
-                android:layout_margin="20dp"
-                android:contentDescription="Java Course" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Java Course"
+                android:src="@drawable/java" />
 
             <TextView
                 android:id="@+id/txtName"
@@ -1121,34 +1124,40 @@
                 android:textColor="#2196f3"/>
 
             <Button
-                android:id="@+id/btnExplore"
+                android:id="@+id/btnExploree"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/imgJenkins"
                 android:layout_below="@+id/txtPhoneNumberJenkins"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/imgJenkins"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNowJenkins"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="BUY NOW"
-                android:layout_toRightOf="@id/btnExplore"
                 android:layout_below="@+id/txtPhoneNumberJenkins"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/btnExploree"
                 android:backgroundTint="#c8e6c9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#4caf50"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="BUY NOW"
+                android:textColor="#4caf50"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
 
 
@@ -1203,56 +1212,20 @@
                 android:textStyle="bold"
                 android:textColor="#2196f3"/>
 
-<<<<<<< HEAD:app/src/main/res/layout/activity_main_dashboard.xml
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/imgBlackPanther"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="20dp"
-                    android:src="@drawable/jenkins" />
 
-                <TextView
-                    android:id="@+id/txtNameBlackPanther"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:layout_toRightOf="@id/imgBlackPanther"
-                    android:text="Ansible"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/txtEmailBlackPanther"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/txtNameBlackPanther"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/imgBlackPanther"
-                    android:text="tony@pantherindustries.com"
-                    android:textColor="#ff3d00"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/txtPhoneNumberBlackPanther"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/txtEmailBlackPanther"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/imgBlackPanther"
-                    android:text="91 2562278283"
-                    android:textColor="#2196f3"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+
+
+
 
 
             </RelativeLayout>
-=======
+
             <Button
                 android:id="@+id/btnExplorePython"
                 android:layout_width="100dp"
@@ -1439,7 +1412,7 @@
                 android:fontFamily="@font/opensans_bold"
                 android:textStyle="bold"/>
 
->>>>>>> ea2017fb70ef546f81e9b4f995c8d83a54173d4b:app/src/main/res/layout/activity_avengers.xml
+
 
 
         </RelativeLayout>
@@ -1770,23 +1743,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/etMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Write your message"
-            android:layout_below="@+id/txtPhoneNumberAndroidDev"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/opensans_bold"
-            android:textSize="18sp"
-            android:backgroundTint="#ffda6b"
-            android:background="#310cff"
-            android:textColorHint="#000000"
-            android:textColor="#000000"
-            android:padding="15dp"
-            android:layout_margin="20dp"
-            android:inputType="textLongMessage"
-            android:maxLines="10" />
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#310cff"
+                android:backgroundTint="#ffda6b"
+                android:fontFamily="@font/opensans_bold"
+                android:hint="Write your message"
+                android:inputType="textLongMessage"
+                android:maxLines="10"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnSend"
