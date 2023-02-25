@@ -38,6 +38,16 @@ class MainActivity : AppCompatActivity() {
     var userIsAuthenticated = false
     lateinit var account: Auth0
 
+    lateinit var btnExploreforJava:Button
+    lateinit var btnExploreWebDev: Button
+    lateinit var btnExploreGitHub: Button
+    lateinit var btnBuyNowDsaWithJava: Button
+    lateinit var btnExploreGoLang: Button
+
+    private var currentLayoutId = R.layout.activity_main_dashboard
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {    // This onCreate() is mandatory and need to be present in every app
         super.onCreate(savedInstanceState)  // OnCreate is a method of the parent class
 
@@ -65,6 +75,42 @@ class MainActivity : AppCompatActivity() {
         // What are bundles and what it is used for?
         // A bundle is used to pass data from one activity to another. This data can be in any form,
         // like strings,Integers,double etc.
+
+        btnExploreforJava = findViewById(R.id.btnExploreforJava)
+        btnExploreWebDev = findViewById(R.id.btnExploreWebDev)
+        btnExploreGitHub = findViewById(R.id.btnExploreGitHub)
+        btnBuyNowDsaWithJava= findViewById(R.id.btnBuyNowDsaWithJava)
+        btnExploreGoLang = findViewById(R.id.btnExploreGoLang)
+
+
+
+
+
+
+
+        btnExploreforJava.setOnClickListener {
+            setContentView(R.layout.java_course)
+        }
+
+        btnExploreWebDev.setOnClickListener {
+            setContentView(R.layout.web_devoplopment)
+        }
+
+        btnExploreGitHub.setOnClickListener {
+            setContentView(R.layout.github)
+        }
+
+        btnBuyNowDsaWithJava.setOnClickListener {
+            setContentView(R.layout.dsa_with_java)
+        }
+
+        btnExploreGoLang.setOnClickListener {
+            setContentView(R.layout.go_lang)
+        }
+
+
+
+
 
 
         titleName = sharedPreferences.getString("Title","The Avengers")
@@ -170,7 +216,15 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             )
+
+          fun onBackPressed() {
+            // set the content view to activity_main_dashboard layout
+            setContentView(R.layout.activity_main_dashboard)
+        }
     }
+
+
+
 
 
 

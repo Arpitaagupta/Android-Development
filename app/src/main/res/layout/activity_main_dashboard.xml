@@ -97,34 +97,40 @@
                 android:textColor="#2196f3"/>
 
             <Button
-                android:id="@+id/btnExplore"
+                android:id="@+id/btnExploreforJava"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/java_course"
                 android:layout_below="@+id/txtPhoneNumber"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/java_course"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNow"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="BUY NOW"
-                android:layout_toRightOf="@id/btnExplore"
                 android:layout_below="@+id/txtPhoneNumber"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/btnExploreforJava"
                 android:backgroundTint="#c8e6c9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#4caf50"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="BUY NOW"
+                android:textColor="#4caf50"
+                android:textSize="10sp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -178,16 +184,19 @@
                 android:id="@+id/btnExploreWebDev"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/WebDev"
                 android:layout_below="@+id/txtPhoneNumberWebDev"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/WebDev"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNowWebDev"
@@ -258,16 +267,19 @@
                 android:id="@+id/btnExploreGitHub"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/GitHub"
                 android:layout_below="@+id/txtPhoneNumberGitHub"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/GitHub"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNowGitHub"
@@ -336,16 +348,19 @@
                 android:id="@+id/btnExploreDsaWithJava"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/dsaWithJava"
                 android:layout_below="@+id/txtPhoneNumberDsaWithJava"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/dsaWithJava"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNowDsaWithJava"
@@ -416,16 +431,19 @@
                 android:id="@+id/btnExploreGoLang"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="EXPLORE"
-                android:layout_toRightOf="@id/imgGoLang"
                 android:layout_below="@+id/txtPhoneNumberGoLang"
-                android:textSize="10sp"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toRightOf="@id/imgGoLang"
                 android:backgroundTint="#d1c4e9"
-                android:padding="8dp"
-                android:layout_margin="8sp"
-                android:textColor="#673ab7"
                 android:fontFamily="@font/opensans_bold"
-                android:textStyle="bold"/>
+                android:padding="8dp"
+                android:text="EXPLORE"
+                android:textColor="#673ab7"
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBuyNowGoLang"

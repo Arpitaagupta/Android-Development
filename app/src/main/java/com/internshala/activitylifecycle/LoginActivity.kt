@@ -1,10 +1,15 @@
 package com.internshala.activitylifecycle
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.RotateAnimation
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -31,6 +36,8 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
     lateinit var btnLogin: Button
     lateinit var txtForgotPassword: TextView
     lateinit var txtRegister: TextView
+    lateinit var anim_text: TextView
+
 
 
     private lateinit var binding: ActivityMainBinding
@@ -74,6 +81,13 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
         txtForgotPassword = findViewById(R.id.txtForgotPassword)
         txtRegister = findViewById(R.id.txtRegister)
 
+        anim_text= findViewById(R.id.anim_text)
+
+
+        txtRegister.setOnClickListener(){
+            setContentView(R.layout.register_yourself)
+        }
+
 
 
         txtForgotPassword.setOnClickListener() {
@@ -82,6 +96,7 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
         }
 
 
+        animateTextView(anim_text)
 
 
        binding.btnLogin.setOnClickListener {
@@ -266,6 +281,20 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
 //    }
 
 
+  /*  //If want to enable the below method then add the layout file first in the activity_main
+
+    <TextView
+    android:id="@+id/emailTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtForgotPassword"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="28dp"
+    android:text="@string/emailofuser"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
     private fun showUserProfile(accessToken: String) {
         val client = AuthenticationAPIClient(account)
 
@@ -291,7 +320,20 @@ class LoginActivity : AppCompatActivity() {   //2. ,View.OnClickListener {  --> 
                     ).show()
                 }
             })
+    }*/
+
+    private fun animateTextView(textView: TextView) {
+        val animation = AlphaAnimation(0.0f, 1.0f)
+        animation.duration = 1000 // 1 second
+        animation.startOffset = 500 // 0.5 seconds delay before starting
+        animation.repeatCount = Animation.INFINITE // repeat indefinitely
+        animation.repeatMode = Animation.REVERSE // reverse animation on repeat
+        textView.startAnimation(animation)
     }
+
+
+
+
 
 
 

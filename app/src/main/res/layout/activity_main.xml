@@ -11,20 +11,48 @@
         android:id="@+id/lottie_animation"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="340dp"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lottie_login_2"
+        app:lottie_rawRes="@raw/lottie_3"
         app:lottie_autoPlay="true"/>
 
+    <TextView
+        android:id="@+id/txtletsgetstarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚀Let's Get Started🚀"
+        android:layout_below="@+id/lottie_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="#1a237e"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/anim_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unleash the power of coding with Code Guru: your one-stop shop for all coding resources!"
+        android:layout_below="@+id/txtletsgetstarted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#1a237e"
+        android:textStyle="bold"
+        android:padding="8dp"/>
 
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log In"
-        android:layout_below="@+id/lottie_animation"
-        android:layout_marginTop="25dp"
+        android:text="Join Here "
+        android:layout_below="@+id/anim_text"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:backgroundTint="@color/button"
@@ -42,23 +70,13 @@
         android:layout_below="@id/btnLogin"
         android:clickable="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:fontFamily="@font/opensans_bold"
         android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/emailTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtForgotPassword"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="28dp"
-        android:text="@string/emailofuser"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/txtRegister"
