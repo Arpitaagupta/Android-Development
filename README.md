@@ -9,6 +9,8 @@ We also introduce progress graphs to help users track their learning progress an
 
 We also provide complete roadmaps, notes, and quizzes on every topic, and each course has a mentor to guide and support users throughout their learning journey. With CodeGuru, you can unlock your potential and gain the skills you need to succeed in the world of coding.
 
+## **Short video representing the working of the app** : [Codeguru](https://drive.google.com/file/d/1S81w77984alZu9V_B0VD6VH1OEJgRvjz/view?usp=share_link)
+
 ## Key Features
 
 - All resources under one roof
